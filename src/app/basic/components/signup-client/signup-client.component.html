@@ -1,0 +1,50 @@
+<div class="bg">
+  <div class="parent">
+    <div class="child">
+      <div nz-col>
+        <h1 style="margin-left: 55px;">Client Signup</h1>
+      </div>
+
+      <form nz-form [formGroup] = "validateForm" (ngSubmit) = "submitForm()">
+        <nz-form-item>
+          <nz-form-control nzHasFeedback nzErrorTip="Este não é um email valido!">
+            <input nz-input placeholder="E-mail" formControlName="email" type="email"/>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzHasFeedback nzErrorTip="Esta não é uma senha valida!">
+            <input nz-input placeholder="Senha" formControlName="password" type="password"/>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzHasFeedback nzErrorTip="Esta não é uma senha valida!">
+            <input nz-input placeholder="Confirme sua senha" formControlName="checkPassword" type="password"/>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzHasFeedback nzErrorTip="Este não é um nome valido!">
+            <input nz-input placeholder="Nome" formControlName="name"/>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzHasFeedback nzErrorTip="Este não é um nome valido!">
+            <input nz-input placeholder="Sobrenome" formControlName="lastname"/>
+          </nz-form-control>
+        </nz-form-item>
+
+        <nz-form-item>
+          <nz-form-control nzHasFeedback nzErrorTip="Este não é um telefone valido!">
+            <input nz-input placeholder="Telefone" formControlName="phone"/>
+          </nz-form-control>
+        </nz-form-item>
+
+        <button nz-button class="login-form-button login-form-margin" [nzType]="'primary'">Cadastrar</button>
+        Or <a routerLink="/login"> Entrar agora</a>
+      </form>
+    </div>
+  </div>
+</div>

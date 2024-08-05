@@ -1,31 +1,9 @@
+<nz-header>
+
+  <ul nz-menu nzTheme="dark" nzMode="horizontal">
+    <li nz-menu-item>Anuncios</li>
+    <li nz-menu-item>Cadastre-se</li>
+    <li nz-menu-item>Entrar</li>
+  </ul>
+</nz-header>
 <router-outlet />
-<nz-layout class="layout">
-    <nz-header>
-      <div class="logo">Service Booking</div>
-      <ul nz-menu nzTheme="dark" nzMode="horizontal">
-        <li nz-menu-item>Anuncios</li>
-        <li nz-menu-item>Cadastre-se</li>
-        <li nz-menu-item>Entrar</li>
-      </ul>
-    </nz-header>
-    <nz-content>
-        <nz-breadcrumb>
-        </nz-breadcrumb>
-        <div class="inner-content">
-            <div>
-                    <nz-card style="width:100%;" nzTitle="Card title" [nzExtra]="extraTemplate">
-                    
-                        <nz-space [nzSize]="12">
-                            <img *nzSpaceItem nz-image width="200px" height="200px"
-                                nzSrc="https://zos.alipayobjects.com/rmsportal/jkjgkEfvpUPVyRjUImniVslZfWPnJuuZ.png" alt="" />
-                            <p *nzSpaceItem> Lets esfasd</p>
-                        </nz-space>
-                    </nz-card>
-                    <ng-template #extraTemplate>
-                        <a>Vizualizar</a>
-                    </ng-template>
-            </div>
-        </div>
-    </nz-content>
-    <nz-footer>Ant Design ©2020 Implement By Angular</nz-footer>
-  </nz-layout>
