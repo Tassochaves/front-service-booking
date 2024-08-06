@@ -2,7 +2,7 @@
   <div class="parent">
     <div class="child">
       <div nz-col>
-        <h1>Cadastro de Cliente</h1>
+        <h1>Cadastro de Empresa</h1>
       </div>
 
       <form nz-form [formGroup] = "validateForm" (ngSubmit) = "submitForm()">
@@ -31,8 +31,8 @@
         </nz-form-item>
 
         <nz-form-item>
-          <nz-form-control nzHasFeedback nzErrorTip="Este não é um sobrenome valido!">
-            <input nz-input placeholder="Sobrenome" formControlName="lastname"/>
+          <nz-form-control nzHasFeedback nzErrorTip="Este não é um endereço valido!">
+            <input nz-input placeholder="Endereço" formControlName="address"/>
           </nz-form-control>
         </nz-form-item>
 
@@ -48,3 +48,4 @@
     </div>
   </div>
 </div>
+
